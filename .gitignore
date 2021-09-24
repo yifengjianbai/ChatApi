@@ -1,0 +1,17 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/Client/obj
+/DbService/bin
+/DbService/obj
+/GetWay/bin
+/GetWay/obj
+/Wang.IdentityServer/bin
+/Wang.IdentityServer/obj
+/Wang.IdentityServer/Properties
+/GetWay/Properties
+/WebApi/bin
+/WebApi/obj
+/WebApi/Properties
+/.vs/ChatApi/v16

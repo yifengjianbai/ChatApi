@@ -1,0 +1,883 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:WebApi.Controllers.AddressBookController">
+            <summary>
+            通讯录
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.FollowedUserList(System.String,System.String)">
+            <summary>
+            我的关注用户列表
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="keyword">用户名称关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.CloseFriendList(System.String,System.String)">
+            <summary>
+            我的密友用户列表
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="keyword">用户名称关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.NoteUserList(System.String,System.String)">
+            <summary>
+            我的备注用户列表
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="keyword">用户名称关键字</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.AddFollowedUser(System.String,System.String)">
+            <summary>
+            添加关注用户
+            </summary>
+            <param name="followedUserId">关注的用户id</param>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.CancelFollowedUser(System.String,System.String)">
+            <summary>
+            取消关注用户
+            </summary>
+            <param name="followedUserId">关注的用户id</param>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.RemarkUser(System.String,System.String,System.String,System.String)">
+            <summary>
+            备注用户
+            </summary>
+            <param name="followedId">关注的用户id</param>
+            <param name="remarkNickName">备注昵称</param>
+            <param name="remark">备注内容</param>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.BlackList(System.String)">
+            <summary>
+            黑名单列表
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.AddBlackList(System.String,System.String)">
+            <summary>
+            加入黑名单
+            </summary>
+            <param name="blackUserId">拉黑的用户id</param>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.AddressBookController.DeleteBlackList(System.String,System.String)">
+            <summary>
+            移除黑名单
+            </summary>
+            <param name="blackUserId">拉黑的用户id</param>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.ChatController">
+            <summary>
+            聊天
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.ChatController.GetReadFlag(System.String)">
+            <summary>
+            发送已读信息记录
+            </summary>
+            <param name="senderId">发送者用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.ChatController.GetOfflineMsg(System.String)">
+            <summary>
+            离线信息记录
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.ChatController.AddReadFlag(DbService.Models.RpChatReadFlag)">
+            <summary>
+            保存发送已读信息
+            </summary>
+            <param name="readFlag"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.ChatController.AddOfflineMsg(DbService.Models.RpChatOfflineMsg)">
+            <summary>
+            保存离线信息
+            </summary>
+            <param name="offlineMsg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.ChatController.DeleteReadFlag(System.Collections.Generic.List{System.Int64})">
+            <summary>
+            批量删除发送已读信息
+            </summary>
+            <param name="flagIds">已读信息id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.ChatController.DeleteOfflineMsg(System.Collections.Generic.List{System.Int64})">
+            <summary>
+            批量删除离线信息
+            </summary>
+            <param name="msgIds">离线消息id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.ChatController.UnlockCharUser(System.String,System.String)">
+            <summary>
+            解锁聊天用户
+            </summary>
+            <param name="sourceUserId">来源用户id</param>
+            <param name="targetUserId">解锁目标用户</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.ChatController.GiveGift(System.String,System.String,System.String)">
+            <summary>
+            赠送商品（道具或礼物）
+            </summary>
+            <param name="targetUserId"></param>
+            <param name="productCode"></param>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.CommentController">
+            <summary>
+            评论
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.CommentController.PageList(System.String)">
+            <summary>
+            评论分页列表
+            </summary>
+            <param name="momentId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.CommentController.Add(System.String,System.String,System.String,System.String)">
+            <summary>
+            评论添加
+            </summary>
+            <param name="content">内容</param>
+            <param name="momentId">动态Id</param>
+            <param name="commentId">评论Id</param>
+            <param name="userId">用户Id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.CommentController.Like(System.String,System.Boolean,System.String)">
+            <summary>
+            评论点赞
+            </summary>
+            <param name="commentId">评论Id</param>
+            <param name="isAdd">是否添加：true-添加赞 false-取消赞</param>
+            <param name="userId">用户Id</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.LoginController">
+            <summary>
+            登录相关
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.Check">
+            <summary>
+            Cousul健康检查
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.Login">
+            <summary>
+            登录-演示授权，非实际接口
+            </summary>
+            <returns>登录成功，返回token</returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.Regist(Infrastructure.CommonModels.RegistUserInfo)">
+            <summary>
+            注册用户
+            </summary>
+            <param name="registUserInfo">注册用户信息</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.SendVerifyCode(System.String)">
+            <summary>
+            短信发送验证码
+            </summary>
+            <param name="phone">手机号</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.VerifyPhone(System.String,System.String)">
+            <summary>
+            验证手机是否有效
+            </summary>
+            <param name="phone">手机号</param>
+            <param name="code">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.GetUserByOpenId(System.String)">
+            <summary>
+            微信openid查询用户
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.LoginByPassword(System.String,System.String)">
+            <summary>
+            手机密码登录
+            </summary>
+            <param name="phone">手机号</param>
+            <param name="password">密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.LoginByVerificationCode(System.String,System.String)">
+            <summary>
+            手机验证码登录
+            </summary>
+            <param name="phone">手机号</param>
+            <param name="verificationCode">验证码</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.UpdatePassword(System.String,System.String,System.String)">
+            <summary>
+            修改密码
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="oldPassword">旧密码</param>
+            <param name="newPassword">新密码</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.LoginController.UpdatePhone(System.String,System.String)">
+            <summary>
+            更换手机号
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="phone">手机号</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.MomentController">
+            <summary>
+            动态
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.MomentController.PageList(Infrastructure.CommonModels.PageQuery{Infrastructure.CommonModels.Moment.MomentQuery})">
+            <summary>
+            动态分页列表
+            </summary>
+            <param name="query"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MomentController.Detail(System.String)">
+            <summary>
+            动态详情
+            </summary>
+            <param name="momentId">动态id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MomentController.Publish(Infrastructure.CommonModels.Moment.MomentAddModel)">
+            <summary>
+            动态发布
+            </summary>
+            <param name="moment"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MomentController.Like(System.String,System.String,System.Boolean)">
+            <summary>
+            点赞
+            </summary>
+            <param name="momentId">动态id</param>
+            <param name="userId">点赞用户</param>
+            <param name="isLike">赞或取消赞</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MomentController.Award(System.String,System.String,System.String)">
+            <summary>
+            打赏礼物
+            </summary>
+            <param name="momentId">动态id</param>
+            <param name="donorId">打赏用户id</param>
+            <param name="giftCode">礼物编码</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MomentController.Share(System.String,System.String,Infrastructure.Enums.ShareType)">
+            <summary>
+            分享动态
+            </summary>
+            <param name="momentId">动态id</param>
+            <param name="userId">分享的用户id</param>
+            <param name="shareType">分享类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.PermissionController">
+            <summary>
+            用户权限
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.PermissionController.AllowFreePublishMoment(System.String)">
+            <summary>
+            是否可免费发布动态
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.PermissionController.AllowFreeChat(System.String)">
+            <summary>
+            可否免费私聊
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.RedPaperController">
+            <summary>
+            基础控制器
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.RedPaperController.Success``1(``0,System.String)">
+            <summary>
+            成功反馈
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="data"></param>
+            <param name="msg"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.RedPaperController.Fail``1(System.String,System.Int32,``0)">
+            <summary>
+            失败反馈
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="msg"></param>
+            <param name="code"></param>
+            <param name="data"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.SettingController">
+            <summary>
+            系统设置
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.SettingController.GetAllTag">
+            <summary>
+            获取标签
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.SettingController.AddTag(System.String,System.String)">
+            <summary>
+            添加标签
+            </summary>
+            <param name="tagText">标签本文</param>
+            <param name="tagType">标签类型</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.StoreController">
+            <summary>
+            商店
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.StoreController.GoodsSellPageList(Infrastructure.Enums.GoodsType,System.Int32,System.Int32)">
+            <summary>
+            商品分页列表
+            </summary>
+            <param name="goodsType">商品类型</param>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.StoreController.CoinsSellPageList(System.Int32,System.Int32)">
+            <summary>
+            金币售卖分页列表
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页大小</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.UserController">
+            <summary>
+            用户
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetTags(System.String)">
+            <summary>
+            用户标签
+            </summary>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetBadgs(System.String)">
+            <summary>
+            用户徽章
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.AddLocation(System.String,System.Double,System.Double)">
+            <summary>
+            添加用户定位
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="longitude">经度</param>
+            <param name="latitude">纬度</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetBag(System.String)">
+            <summary>
+            用户背包
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetGoods(System.String,Infrastructure.Enums.GoodsType)">
+            <summary>
+            背包商品
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="goodsType">商品类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.Statistics(System.String)">
+            <summary>
+            统计
+            </summary>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetVisitorRecord(System.String,System.Int32,System.Int32)">
+            <summary>
+            用户被访问记录
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetVisitRecord(System.String)">
+            <summary>
+            用户访问记录
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.SignIn(System.String)">
+            <summary>
+            签到
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetSignRecord(System.String)">
+            <summary>
+            用户签到记录
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.ReceiveCoins(System.String,System.Int32)">
+            <summary>
+            领取金币
+            </summary>
+            <param name="userId"></param>
+            <param name="count"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetAccount(System.String)">
+            <summary>
+            获取用户账户
+            金币与经验值
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetAwardGifts(System.String)">
+            <summary>
+            打赏礼物
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetAwardUserRank(System.String)">
+            <summary>
+            打赏排行
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetAwardGiftFromUser(System.String,System.String)">
+            <summary>
+            获取指定的用户的打赏的礼物
+            </summary>
+            <param name="userId">接受礼物的用户id</param>
+            <param name="awardUserId">打赏礼物的用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.GetWeekTrack(System.String)">
+            <summary>
+            本周足迹
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.WishController">
+            <summary>
+            愿望
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.WishController.WishPageList(System.Int32,System.Int32)">
+            <summary>
+            愿望池分页列表
+            </summary>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.WishController.MyWishPageList(System.String,System.Int32,System.Int32)">
+            <summary>
+            我的愿望分页列表
+            </summary>
+            <param name="userId">用户id</param>
+            <param name="pageIndex">页码</param>
+            <param name="pageSize">页大小</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.WishController.Detail(System.String)">
+            <summary>
+            愿望详情
+            </summary>
+            <param name="wishId">愿望id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.WishController.Publish(Infrastructure.CommonModels.Wish.WishAddModel)">
+            <summary>
+            发布愿望
+            </summary>
+            <param name="wish"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.WishController.Suspend(System.String,System.String)">
+            <summary>
+            中止
+            </summary>
+            <param name="wishId">愿望id</param>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.WishController.Backout(System.String,System.String)">
+            <summary>
+            撤回
+            </summary>
+            <param name="wishId">愿望id</param>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.WishController.Share(System.String,Infrastructure.Enums.ShareType,System.String)">
+            <summary>
+            分享
+            </summary>
+            <param name="wishId">愿望id</param>
+            <param name="shareType">分享类型</param>
+            <param name="userId">用户id</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.WishController.AwardGift(System.String,System.String,System.String)">
+            <summary>
+            打赏礼物
+            </summary>
+            <param name="wishId">愿望id</param>
+            <param name="donorId">打赏的用户id</param>
+            <param name="giftCode">礼物编号</param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.MessageHelper">
+            <summary>
+            短信帮助类
+            </summary>
+        </member>
+        <member name="M:WebApi.MessageHelper.SendCode(System.String,System.String,System.String,System.String)">
+            <summary>
+            单发
+            </summary>
+            <param name="Phone">手机号</param>
+            <param name="code">验证码</param>
+            <param name="custid">用户自定义流水号</param>
+            <param name="time">有效时间</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.MessageHelper.submit(WebApi.PhoneMessage,System.Int32)">
+            <summary>
+            统一提交
+            </summary>
+            <param name="message">请求对象</param>
+            <param name="sendtype">请求类型,1:单发，2：相同内容群发，3：不同类型群发，4：获取上行，5：获取状态报告，6：获取账号余额</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.MessageHelper.httpPost(System.String,System.String,System.Boolean)">
+            <summary>
+            HTTP提交
+            </summary>
+            <param name="uri"></param>
+            <param name="contents"></param>
+            <param name="bKeepAlive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.MessageHelper.MD5Hash(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="input"></param>
+            <returns></returns>
+        </member>
+        <member name="F:WebApi.PhoneMessage.UserId">
+            <summary>
+            获取或设置用户账号
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.Pwd">
+            <summary>
+              获取或设置用户密码
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.Mobile">
+            <summary>
+            
+             获取或设置目标号码，用英文逗号(,)分隔，最大1000个号码。一次提交的号码类型不受限制，但手机会做验证，若有不合法的手机号将会被退回。号码段类型分为：移动、联通、电信手机
+            注意：请不要使用中文的逗号
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.Content">
+            <summary>
+              获取或设置短信内容， 内容长度不大于990个汉字
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.TimeStamp">
+            <summary>
+             获取或设置时间戳
+            时间戳,格式为:MMDDHHMMSS,即月日时分秒,定长10位,月日时分秒不足2位时左补0.时间戳请获取您真实的服务器时间,不要填写固定的时间,否则pwd参数起不到加密作用
+            
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.SvrType">
+            <summary>
+              获取或设置业务类型 最大可支持32位的字符串。预留字段，暂不生效。
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.ExNo">
+            <summary>
+            
+             获取或设置子端口号码，不带请填星号{*}
+            长度由账号类型定4-6位，通道号总长度不能超过20位。如：10657****主通道号，3321绑定的扩展端口，主+扩展+子端口总长度不能超过20位。
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.CustId">
+            <summary>
+              获取或设置该条短信在您业务系统内的ID，比如订单号或者短信发送记录的流水号。填写后发送状态返回值内将包含这个ID.最大可支持64位的字符串
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.Packid">
+            <summary>
+            
+             获取或设置请为您所发出每一个短信包进行惟一编号,网络异常需要重发时请保持不变，我们系统将根据包ID进行10分钟内的重复过滤.
+            若不需要滤重，可以不传packid或填0.
+            请尽量使用下面的方法保持packid的惟一性:
+            年年月月日日时时分分秒秒3位毫秒+1~99999的自增数字
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.ExData">
+            <summary>
+             获取或设置额外提供的最大64个长度的自定义扩展数据.填写后发送状态返回值内将会包含这部分数据
+            </summary> 
+        </member>
+        <member name="P:WebApi.PhoneMessage.Multimt">
+            <summary>
+              获取或设置批量短信请求包。该字段中包含N个短信包结构体。每个结构体间用固定的分隔符隔开。
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.RetSize">
+            <summary>
+             获取或设置
+            N的范围为1~200.
+            分隔符为英文逗号(,).
+            单个短信包结构体的内容见下表.
+            获取上行或者状态报告的最大条数
+            </summary>
+        </member>
+        <member name="F:WebApi.PhoneMessage.ApiKey">
+            <summary>
+            APIKEY
+            </summary>
+        </member>
+        <member name="P:WebApi.PhoneMessage.Multimtes">
+            <summary>
+            不同内容群发
+            </summary>
+        </member>
+        <member name="F:WebApi.MultiMt.mobile">
+            <summary>
+             获取或设置手机号
+            </summary>
+        </member>
+        <member name="F:WebApi.MultiMt.content">
+            <summary>
+            获取或设置 短信内容
+            </summary>
+        </member>
+        <member name="F:WebApi.MultiMt.svrtype">
+            <summary>
+            获取或设置 业务类型
+            </summary>
+        </member>
+        <member name="F:WebApi.MultiMt.exno">
+            <summary>
+            获取或设置 扩展号
+            </summary>
+        </member>
+        <member name="F:WebApi.MultiMt.custid">
+            <summary>
+             获取或设置用户自定义的消息编号
+            </summary>
+        </member>
+        <member name="F:WebApi.MultiMt.exdata">
+            <summary>
+            获取或设置 自定义扩展数据
+            </summary>
+        </member>
+        <member name="M:WebApi.UrlEncdoeSend.execute(WebApi.PhoneMessage,System.Int32,System.String,System.Int32,System.Boolean)">
+            <summary>
+            提交请求
+            </summary>
+            <param name="message">请求报文</param>
+            <param name="sendType">请求类型,1:单发，2：相同内容群发，3：不同类型群发，4：获取上行，5：获取状态报告，6：获取账号余额</param>
+            <param name="IpAndPort">IP/PORT，格式:ip:port,例如：122.11.1.88:8888</param>
+            <param name="authenticationMode">鉴权方式,0:账号+密码，1：APIKEY</param>
+            <param name="bKeepAlive">是否长连接，TRUE：长连接，FALSE：短连接</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.UrlEncdoeSend.getUrl(System.Int32,System.String)">
+            <summary>
+            通过请求接口类型+IP/PORT获取完整的接口路径
+            </summary>
+            <param name="sendtype">请求类型,1:单发，2：相同内容群发，3：不同类型群发，4：获取上行，5：获取状态报告，6：获取账号余额</param>
+            <param name="ipport">IP/PORT，格式:ip:port,例如：122.11.1.88:8888</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.UrlEncdoeSend.httpPost(System.String,System.String,System.Boolean)">
+            <summary>
+            HTTP提交
+            </summary>
+            <param name="uri"></param>
+            <param name="contents"></param>
+            <param name="bKeepAlive"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.UrlEncodeMessageTemplate.getContentString(System.Int32,WebApi.PhoneMessage,System.Int32)">
+            <summary>
+            封装报文
+            </summary>
+            <param name="sendType"></param>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WebApi.UrlEncodeMessageTemplate.getSingleContentString(WebApi.PhoneMessage,System.Int32)" -->
+        <member name="M:WebApi.UrlEncodeMessageTemplate.getBatchContentString(WebApi.PhoneMessage,System.Int32)">
+            <summary>
+            获取相同内群发封装UrlContent数据
+            </summary>
+            <param name="message"></param>
+            <returns></returns>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_SEND_CONTENT_URLENCODE_NORMAL">
+            <summary>
+            发送报文URLENCODE，默认账号+密码鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_SEND_CONTENT_URLENCODE_APIKEY">
+            <summary>
+            发送报文URLENCODE， APIKEY鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_MULT_CONTENT_URLENCODE_NORMAL">
+            <summary>
+            个性发送报文URLENCODE，默认账号+密码鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_MULT_CONTENT_URLENCODE_APIKEY">
+            <summary>
+            个性发送报文URLENCODE， APIKEY鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_MO_URLENCODE_NORMAL">
+            <summary>
+            获取上行报文URLENCODE，默认账号+密码鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_MO_URLENCODE_APIKEY">
+            <summary>
+            获取上行报文URLENCODE， APIKEY鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_RPT_URLENCODE_NORMAL">
+            <summary>
+            获取RPT报文URLENCODE，默认账号+密码鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_RPT_URLENCODE_APIKEY">
+            <summary>
+            获取RPT报文URLENCODE， APIKEY鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_BALANCE_URLENCODE_NORMAL">
+            <summary>
+            获取查询余额报文URLENCODE，默认账号+密码鉴权模板 
+            </summary>
+        </member>
+        <member name="F:WebApi.UrlEncodeMessageTemplate.TMP_BALANCE_URLENCODE_APIKEY">
+            <summary>
+            获取查询余额报文URLENCODE， APIKEY鉴权模板 
+            </summary>
+        </member>
+        <member name="T:WebApi.MiddleWare.CustomExceptionMiddleWare">
+            <summary>
+            自定义异常捕获中间件
+            </summary>
+        </member>
+        <member name="M:WebApi.MiddleWare.CustomExceptionMiddlewareExtensions.UseCustomExceptionMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            自定义异常捕获中间件
+            </summary>
+            <param name="builder"></param>
+            <returns></returns>
+        </member>
+        <member name="T:WebApi.MiddleWare.DistributeLockFilter">
+            <summary>
+            自定义分布式锁过滤器
+            </summary>
+        </member>
+        <member name="P:WebApi.Models.Response.ResponseBase.Message">
+            <summary>
+            操作消息【当Status不为 200时，显示详细的错误信息】
+            </summary>
+        </member>
+        <member name="P:WebApi.Models.Response.ResponseBase.Code">
+            <summary>
+            操作状态码，200为正常
+            </summary>
+        </member>
+        <member name="T:WebApi.Models.Response.ResponseBase`1">
+            <summary>
+            WEBAPI通用返回泛型基类
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:WebApi.Models.Response.ResponseBase`1.Result">
+            <summary>
+            回传的结果
+            </summary>
+        </member>
+        <member name="M:WebApi.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            IOC注册
+            </summary>
+            <param name="builder"></param>
+        </member>
+    </members>
+</doc>

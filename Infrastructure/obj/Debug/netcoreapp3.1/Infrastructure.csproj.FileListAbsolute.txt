@@ -1,0 +1,11 @@
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.xml
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfoInputs.cache
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.AssemblyInfo.cs
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CoreCompileInputs.cache
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
+D:\work\HardManNew\redPaper\redpaperwebapi\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.AssemblyReference.cache

@@ -1,0 +1,1122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Infrastructure</name>
+    </assembly>
+    <members>
+        <member name="T:Infrastructure.CommonModels.MatchCondition">
+            <summary>
+            匹配条件
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.MatchCondition.Sex">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.MatchCondition.AgeMin">
+            <summary>
+            最小年龄
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.MatchCondition.AgeMax">
+            <summary>
+            最大年龄
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.MatchCondition.Tag">
+            <summary>
+            个性标签
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.Moment.MomentAddModel">
+            <summary>
+            动态添加类型
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.MomentId">
+            <summary>
+            动态id
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.OnTop">
+            <summary>
+            是否置顶
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.Scope">
+            <summary>
+            可见范围
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.IsAnonymous">
+            <summary>
+            是否匿名发布
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.AtUserIds">
+            <summary>
+            @用户
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.AtWishId">
+            <summary>
+            关联的愿望Id
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.City">
+            <summary>
+            所在城市
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.UserLocation">
+            <summary>
+            用户定位
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.GpsInfo">
+            <summary>
+            用户GPS地址
+            记录经纬度：1231.0098,2342.123
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.MomentType">
+            <summary>
+            动态分类
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.IsFree">
+            <summary>
+            是否免费发布
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.IsVipMoment">
+            <summary>
+            是否vip动态
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.HasAttath">
+            <summary>
+            是否有附件
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentAddModel.Attachments">
+            <summary>
+            附件
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.Moment.Attachment">
+            <summary>
+            附件信息
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.Attachment.MediaType">
+            <summary>
+            附件类型
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.Attachment.MediaUrl">
+            <summary>
+            附件地址
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.Attachment.TopicId">
+            <summary>
+            主题id
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.Attachment.TopicType">
+            <summary>
+            主题类型
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentQuery.ListType">
+            <summary>
+            动态列表分类
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentQuery.CurrentUserId">
+            <summary>
+            当前用户Id
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.Moment.MomentOutput">
+            <summary>
+            动态输出模型
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.MomentId">
+            <summary>
+            动态id
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.Content">
+            <summary>
+            动态内容
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.MomentType">
+            <summary>
+            内容分类
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.IsAnonymous">
+            <summary>
+            是否匿名
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.GiftCount">
+            <summary>
+            打赏礼物数量
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.LikeCount">
+            <summary>
+            点在数量
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.VisitCount">
+            <summary>
+            访问次数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.AtUserInfos">
+            <summary>
+            @用户
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.AtWishId">
+            <summary>
+            关联的愿望
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.AtWishName">
+            <summary>
+            关联的愿望名称
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.City">
+            <summary>
+            所在的城市
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.CreateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.HasAttath">
+            <summary>
+            是否有附件
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Moment.MomentOutput.IsVipMoment">
+            <summary>
+            是否是达人动态
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.NormalUserAward">
+            <summary>
+            素人奖励模型
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.NormalUserAward.Level">
+            <summary>
+            素人等级
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.NormalUserAward.MomentFreeCountPerWeek">
+            <summary>
+            每周免费发布动态的次数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.NormalUserAward.ChatFreeCountPerWeek">
+            <summary>
+            每周免费私聊的次数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.NormalUserAward.AwardGoods">
+            <summary>
+            赠送商品
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.NormalUserAwardGoods">
+            <summary>
+            素人奖励商品模型
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.NormalUserAwardGoods.GoodsCode">
+            <summary>
+            商品编码
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.NormalUserAwardGoods.Count">
+            <summary>
+            商品个数
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.PageQuery`1">
+            <summary>
+            分页查询
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Infrastructure.CommonModels.PageQuery`1.PageIndex">
+            <summary>
+            页数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.PageQuery`1.PageSize">
+            <summary>
+            页大小
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.PageQuery`1.Where">
+            <summary>
+            条件对象
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.PageResult`1">
+            <summary>
+            分页结果
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Infrastructure.CommonModels.PageResult`1.PageIndex">
+            <summary>
+            页数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.PageResult`1.PageSize">
+            <summary>
+            页大小
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.PageResult`1.Total">
+            <summary>
+            总共条数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.PageResult`1.Data">
+            <summary>
+            数据
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.AddressBookUserInfoOutput">
+            <summary>
+            通讯录用户信息
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.AddressBookUserInfoOutput.IsFollowed">
+            <summary>
+            是否关注
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.AddressBookUserInfoOutput.IsOnline">
+            <summary>
+            是否在线
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.GiftUserInfoOutput">
+            <summary>
+            打赏礼物用户
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.GiftUserInfoOutput.GiftCount">
+            <summary>
+            打赏的礼物个数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.GiftUserInfoOutput.TotalMoney">
+            <summary>
+            打赏总金额
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.GiftUserInfoOutput.RankNum">
+            <summary>
+            排位
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.UserAccountOutput">
+            <summary>
+            用户账户经验与金币
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserAccountOutput.CoinsCount">
+            <summary>
+            金币数量
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserAccountOutput.NewExperience">
+            <summary>
+            本周新增经验值
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserAccountOutput.ConvertExperience">
+            <summary>
+            可转换为金币的经验值
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserAccountOutput.AvaiableCoinsCount">
+            <summary>
+            可提取的金币数量
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.UserGiftOutput">
+            <summary>
+            打赏礼物
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserGiftOutput.GiftCode">
+            <summary>
+            礼品code
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserGiftOutput.GiftName">
+            <summary>
+            名称
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserGiftOutput.Count">
+            <summary>
+            数量
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.UserInfoOutput">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserInfoOutput.UserId">
+            <summary>
+            用户id
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserInfoOutput.Nickname">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserInfoOutput.AvatarUrl">
+            <summary>
+            头像
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserInfoOutput.Genders">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserInfoOutput.IsVip">
+            <summary>
+            是否达人
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.UserStatisticOutput">
+            <summary>
+            用户统计
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserStatisticOutput.FollowCount">
+            <summary>
+            被关注数量
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserStatisticOutput.FollowedCount">
+            <summary>
+            关注数量
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserStatisticOutput.RewardCount">
+            <summary>
+            打赏数量
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserStatisticOutput.VisitCount">
+            <summary>
+            访问数量
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.UserTrackOutput">
+            <summary>
+            用户足迹
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserTrackOutput.City">
+            <summary>
+            城市
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserTrackOutput.Address">
+            <summary>
+            街道
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserTrackOutput.IsOften">
+            <summary>
+            平常
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserTrackOutput.Count">
+            <summary>
+            到访次数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.UserTrackOutput.InteractCount">
+            <summary>
+            交互人数
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.VisitorInfoOutput">
+            <summary>
+            访问者信息
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitorInfoOutput.IsVip">
+            <summary>
+            是否达人
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitorInfoOutput.IsOnline">
+            <summary>
+            是否在线
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitorInfoOutput.IsAnonymous">
+            <summary>
+            是否匿名
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitorInfoOutput.VisitCount">
+            <summary>
+            访问次数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitorInfoOutput.LastVistTime">
+            <summary>
+            最近的访问时间
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitorInfoOutput.DisplayText">
+            <summary>
+            文本
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.User.VisitUserInfoOutput">
+            <summary>
+            访客
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitUserInfoOutput.IsFollowed">
+            <summary>
+            是否关注
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitUserInfoOutput.IsOnline">
+            <summary>
+            是否在线
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitUserInfoOutput.IsAnonymous">
+            <summary>
+            是否匿名
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitUserInfoOutput.VisitCount">
+            <summary>
+            访问次数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitUserInfoOutput.NearVisitTime">
+            <summary>
+            最近访问时间
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.User.VisitUserInfoOutput.DisplayNearVisitTime">
+            <summary>
+            最近访问展示时间
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.Phone">
+            <summary>
+            手机号码
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.Password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.NickName">
+            <summary>
+            昵称
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.AvatarUrl">
+            <summary>
+            用户头像
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.Genders">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.Birthday">
+            <summary>
+            生日
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.Age">
+            <summary>
+            年龄
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.Tags">
+            <summary>
+            个性标签
+            格式：xxx,xxx,xxx,xx
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.IsVip">
+            <summary>
+            是否为达人
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.VipDuration">
+            <summary>
+            持续时间
+            单位：天
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.RegistUserInfo.Fee">
+            <summary>
+            花费金额
+            </summary>
+        </member>
+        <member name="T:Infrastructure.CommonModels.Wish.WishAddModel">
+            <summary>
+            愿望添加模型
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.WishId">
+            <summary>
+            愿望id
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.WishName">
+            <summary>
+            愿望名称
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.WishDesc">
+            <summary>
+            愿望描述
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.WishDescType">
+            <summary>
+            愿望文本类型
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.RealizeType">
+            <summary>
+            实现方式
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.RealizeUser">
+            <summary>
+            指定实现人
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.GiftCode">
+            <summary>
+            礼物编号
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.GiftName">
+            <summary>
+            礼物名称
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.GiftPicUrl">
+            <summary>
+            礼物图片
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.GiftValue">
+            <summary>
+            礼物价值
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.WishStatus">
+            <summary>
+            愿望状态
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.UserId">
+            <summary>
+            创建用户
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.WishCatalog">
+            <summary>
+            愿望分类
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishAddModel.IsFree">
+            <summary>
+            使用使用免费次数
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishProgessOutput.ProgessPercent">
+            <summary>
+            进度百分比
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishProgessOutput.Balance">
+            <summary>
+            差额
+            </summary>
+        </member>
+        <member name="P:Infrastructure.CommonModels.Wish.WishQuery.CreateUserId">
+            <summary>
+            创建者
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.ActionType">
+            <summary>
+            行为类别
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ActionType.PubMement">
+            <summary>
+            发布动态
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ActionType.PubWish">
+            <summary>
+            发布愿望
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ActionType.Login">
+            <summary>
+            每日登录
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ActionType.InviteRegist">
+            <summary>
+            邀请注册
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ActionType.Share">
+            <summary>
+            每日分享
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ActionType.AwardGift">
+            <summary>
+            礼物打赏
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ActionType.Signin">
+            <summary>
+            每日签到
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ActionType.Remark">
+            <summary>
+            每日评论
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.BagActionType">
+            <summary>
+            背包行为
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.BagActionType.PutIn">
+            <summary>
+            存入
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.BagActionType.TakeOut">
+            <summary>
+            取出
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.BehaviorType">
+            <summary>
+            商品使用行为
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.BehaviorType.Award">
+            <summary>
+            打赏
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.BehaviorType.Give">
+            <summary>
+            赠送
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.BehaviorType.Withdraw">
+            <summary>
+            提现
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.BehaviorType.Used">
+            <summary>
+            使用
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.ContentType">
+            <summary>
+            聊天信息内容类型
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.GenderType">
+            <summary>
+            性别
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.GoodsType">
+            <summary>
+            商品类型
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.GoodsType.Prop">
+            <summary>
+            道具
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.GoodsType.Gift">
+            <summary>
+            礼物
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.GoodsFromType">
+            <summary>
+            商品来源方式
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.GoodsFromType.Buy">
+            <summary>
+            购买
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.GoodsFromType.Give">
+            <summary>
+            赠送或打赏
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.IdentityType">
+            <summary>
+            身份
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.MediaType">
+            <summary>
+            附件类型
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.MomentType">
+            <summary>
+            动态类型
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.MomentScope">
+            <summary>
+            动态范围
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.MomentListType">
+            <summary>
+            动态分类
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.RedPaperApiCode">
+            <summary>
+            自定义api返回码
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Success">
+            <summary>
+            请求成功
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Insufficient_ISV_Permissions">
+            <summary>
+            开发者权限不足
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Insufficient_User_Permissions">
+            <summary>
+            用户权限不足
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Remote_Service_Error">
+            <summary>
+            远程服务错误
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Missing_Method">
+            <summary>
+            缺少方法名参数
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Invalid_Method">
+            <summary>
+            不存在的方法名
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Invalid_Format">
+            <summary>
+            非法数据格式
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Missing_Signature">
+            <summary>
+            缺少签名参数
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Invalid_Signature">
+            <summary>
+            非法签名
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Error_Param">
+            <summary>
+            错误参数
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.RedPaperApiCode.Server_Error">
+            <summary>
+            服务错误
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.ShareType">
+            <summary>
+            分享类型
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ShareType.WeChatFriend">
+            <summary>
+            微信好友
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ShareType.WeChatMoment">
+            <summary>
+            微信朋友圈
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ShareType.RedPaperApp">
+            <summary>
+            红笺App
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.ShareTopicType">
+            <summary>
+            分享主题类型
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ShareTopicType.Mement">
+            <summary>
+            动态
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ShareTopicType.Wish">
+            <summary>
+            愿望
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ShareTopicType.Report">
+            <summary>
+            周报
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.ShareTopicType.Invite">
+            <summary>
+            邀请好友
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.TopicType">
+            <summary>
+            公共媒体主题类型
+            </summary>
+        </member>
+        <member name="T:Infrastructure.Enums.WishStatus">
+            <summary>
+            愿望状态
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.WishStatus.Draft">
+            <summary>
+            草稿
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.WishStatus.Published">
+            <summary>
+            已发布
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.WishStatus.Going">
+            <summary>
+            进行中
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.WishStatus.Accomplish">
+            <summary>
+            完成
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Enums.WishStatus.revocation">
+            <summary>
+            撤销
+            </summary>
+        </member>
+        <member name="M:Infrastructure.EnumExtensions.GetDescription(System.Enum)">
+            <summary>
+            获取枚举的描述信息
+            </summary>
+            <param name="en"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.EnumExtensions.GetEnumValues``1">
+            <summary>
+            获取枚举下所有元素值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Extensions.PredicateBuilder.False``1">
+            <summary>
+            机关函数应用False时：单个AND无效，多个AND无效；单个OR有效，多个OR有效；混应时写在OR后面的AND有效  
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.StringExtensions.TrimStart(System.String,System.String,System.StringComparison)">
+            <summary>
+            头位置去除
+            </summary>
+            <param name="source"></param>
+            <param name="trim"></param>
+            <param name="stringComparison"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Infrastructure.StringExtensions.SplitCsv(System.String,System.Boolean)" -->
+        <member name="M:Infrastructure.StringExtensions.IsNullOrWhitespace(System.String)">
+            <summary>
+            判断为空或null
+            </summary>
+            <param name="s"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.StringExtensions.IsTelephone(System.String)">
+            <summary>
+            判断是否是手机号码
+            </summary>
+            <param name="str_telephone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.StringExtensions.IsIDcard(System.String)">
+            <summary>
+            判断身份证
+            </summary>
+            <param name="str_idcard"></param>
+            <returns></returns>
+        </member>
+        <member name="F:Infrastructure.Helpers.RedisHelper.ConnectionString">
+            <summary>
+            连接字符串
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Helpers.RedisHelper._lock">
+            <summary>
+            锁
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Helpers.RedisHelper._connection">
+            <summary>
+            连接对象
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Helpers.RedisHelper.SetConnection(System.String)">
+            <summary>
+            设置Redis连接字符串
+            </summary>
+            <param name="connectionStr">连接字符串</param>
+        </member>
+        <member name="P:Infrastructure.Helpers.RedisHelper.Instance">
+            <summary>
+            redis操作类实例
+            </summary>
+        </member>
+        <member name="F:Infrastructure.Helpers.RedisHelper._db">
+            <summary>
+            数据库
+            </summary>
+        </member>
+        <member name="M:Infrastructure.Helpers.RedisHelper.GetConnection">
+            <summary>
+            获取连接
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Helpers.RedisHelper.GetDatabase(System.Nullable{System.Int32})">
+            <summary>
+            获取数据库
+            </summary>
+            <param name="db"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Helpers.RedisHelper.Set(System.String,System.Object,System.Int32)">
+            <summary>
+            设置
+            </summary>
+            <param name="key">键</param>
+            <param name="data">值</param>
+            <param name="cacheTime">时间</param>
+        </member>
+        <member name="M:Infrastructure.Helpers.RedisHelper.Get``1(System.String)">
+            <summary>
+            根据键获取值
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Helpers.RedisHelper.Deserialize``1(System.Byte[])">
+            <summary>
+            反序列化
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="serializedObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Helpers.RedisHelper.IsSet(System.String)">
+            <summary>
+            判断是否已经设置
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Infrastructure.Helpers.RedisHelper.Serialize(System.Object)">
+            <summary>
+            序列化
+            </summary>
+            <param name="data"></param>
+            <returns>byte[]</returns>
+        </member>
+    </members>
+</doc>
